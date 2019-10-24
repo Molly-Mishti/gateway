@@ -31,7 +31,7 @@ data:
             }
 
             map $http_host $service {
-                default     "ui";
+                default     "user_interface";
                 ~^((?<svc>.+)\.)?((?<projectn>.+)\.)hasura-app\.io(:)?(0-9+)?$ $svc;
             }
 
